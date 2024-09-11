@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+        }
+
+        .curved-line {
+            width: 4px;
+            height: 200px;
+            background: linear-gradient(180deg, #4e54c8, #8f94fb);
+            border-radius: 100px;
+            position: relative;
+            animation: pulse 2s infinite ease-in-out, wave 4s infinite ease-in-out;
+            transform-origin: center;
+        }
+
+        /* Pulsating effect (thickness) */
+        @keyframes pulse {
+            0%, 100% {
+                transform: scaleY(1);
+            }
+            50% {
+                transform: scaleY(1.5); /* Pulsates the thickness (height) */
+            }
+        }
+
+        /* Moving curves effect */
+        @keyframes wave {
+            0% {
+                border-radius: 20px 50px 30px 50px;
+                transform: rotate(0deg);
+            }
+            50% {
+                border-radius: 100px 0px 100px 0px;
+                transform: rotate(10deg); /* Curve slightly to the right */
+            }
+            100% {
+                border-radius: 50px 50px 50px 50px;
+                transform: rotate(-10deg); /* Curve slightly to the left */
+            }
+        }
+    </style>
+    <title>Pulsating Curved Vertical Line</title>
+</head>
+<body>
+    <div class="curved-line"></div>
+</body>
+</html>

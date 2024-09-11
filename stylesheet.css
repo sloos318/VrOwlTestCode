@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #E6E6E8;
+}
+
+ul {
+    list-style: none;
+}
+
+img{
+    width: 2.8em;
+    height:auto;
+}
+
+.carousel-track{
+    overflow: hidden;
+}
+
+.carousel {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    transition: transform 300ms ease-in-out;
+    width: 100%;
+    height: 100%;
+}
+
+.list-item {
+    position: relative;
+    display: grid;
+    min-width: 100%;
+    grid-template-columns: 30vw 60vw;
+    background-color: #010627;
+    color: #F5F7FB;
+
+    height: 80vh;
+    
+}
+
+
+.information {
+    grid-column: 2;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    list-style-type: style;
+    column-gap: 4em;
+    padding-left: 8vw;
+    background-color: #E6E6E8;
+    color: #010627;
+}
+
+.information li{
+    width: 20vw;
+    
+}
+
+.information h4 {
+    font-size: 1.35em;
+    padding: .2em 0;
+}
+
+.bullet-points {
+    grid-column: 1;
+    margin-top: 3em;
+    list-style-type: style;
+    padding-left: 8vw;
+}
+
+.bullet-points img{
+    margin-bottom: 5em;
+}
+
+
+.bullet-points hr{
+    margin-top: .2em;
+    border-bottom: 1.5px solid #E6E6E8;
+    width: 3em;
+    margin-bottom: 2.3em;
+}
+
+.bullet-points li{
+    margin-bottom: 1.3em;
+    list-style-position: inside;
+}
+
+.carousel h3{
+    font-size: 1.5vw;
+}
+
+.carousel li{
+    font-size: .9vw;
+}
+
+button {
+    top: 50%;
+    border: none;
+    font-size: 2rem;
+    background: none;
+    cursor: pointer;
+    transition: background-color 200ms ease-in-out;
+  }
+
+  button:hover {
+    background: rgb(0, 0, 0, 0.1);
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+
+  footer {
+    position: relative;
+    top: 45vh;
+    background-color: var(--background-color);
+}
+
+footer img {
+    width: 100%;
+}
+  
