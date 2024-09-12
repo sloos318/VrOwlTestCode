@@ -2,7 +2,7 @@
     --type-scale-1: clamp(2.25rem, 1.7143rem + 2.8vw, 15rem);
     --type-scale-2: clamp(16px, 2.3vw, 30px);
     --type-scale-2-hover: clamp(16px, 2.5vw, 36px);
-    --type-scale-3: clamp(10px, 2.2vw, 40px);
+    --type-scale-3: clamp(10px, 2.2vw, 17px);
     --type-scale-4: clamp(45px, 1.7143rem + 2.8vw, 4rem);
     --type-scale-5: clamp(30px, 3.8vw, 15rem);
     --type-scale-6: clamp(16px, 2.3vw, 20px);
