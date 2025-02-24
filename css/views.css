@@ -1,28 +1,39 @@
 :root {
-    --type-scale-1: clamp(2.25rem, 1.7143rem + 2.8vw, 15rem);
-    --type-scale-2n: clamp(16px, 6vw, 30px);
-    --type-scale-2-hover: clamp(16px, 2.5vw, 36px);
-    --type-scale-3: clamp(20px, 1.8vw, 30px);
-    --type-scale-4: clamp(45px, 1.7143rem + 2.8vw, 4rem);
-    --type-scale-5: clamp(30px, 3.2vw, 100px);
-    --type-scale-6: clamp(16px, 1.5vw, 20px);
-    --type-scale-phone-1: clamp(25px, 2.8vw, 66px);
-    --widt-clamp-CTA: clamp(180px, 16.5vw, 200px);
-    --widt-clamp-CTA-animated: clamp(180px, 19vw, 220px);
-    --maincollor: #ff9636;
-    --fontcolor-1: #140a00;
-    --fontcolor-4: #0e0700;
-    --fontcolor-3: #1e160e;
-    --fontcolor-2: #6d6862;
-    --background-color: #f9fbfa;
-    --background-color2: #f7faf8;
-    --secondary-color-cognac: #955d4e;
-    --secondary-color-salmon: #d1947c;
-    --secondary-color-persianorange: #e89559;
-    --Low-Opacity-orange: #ffd8b8; 
-    --Low-opacity-orange2: #fcad65; 
-    
-  }
+  --type-scale-1: clamp(2.25rem, 1.7143rem + 2.8vw, 15rem);
+  --type-scale-1-2: clamp(2rem, .5rem + 4vw, 4rem);
+  --type-scale-2: clamp(16px, 2.3vw, 30px);
+  --type-scale-2-1: clamp(16px, 2.5vw, 45px);
+  --type-scale-2-1-hover: clamp(16px, 2.7vw, 50px);
+  --type-scale-2n: clamp(16px, 6vw, 30px);
+  --type-scale-2p: clamp(1rem, 0.9rem + 0.2976vw, 1.25rem);
+  --type-scale-2-hover: clamp(16px, 2.5vw, 36px);
+  --type-scale-2-2: clamp(1.125rem, 0.9821rem + 0.2976vw, 1.25rem);
+  --type-scale-3: clamp(20px, 1.8vw, 30px);
+  --type-scale-3-2: clamp(10px, 1.8vw, 36px);
+  --type-scale-4: clamp(45px, 1.7143rem + 2.8vw, 4rem);
+  --type-scale-5: clamp(30px, 3.2vw, 100px);
+  --type-scale-5-2: clamp(30px, 3.8vw, 15rem);
+  --type-scale-6: clamp(16px, 2.3vw, 20px);
+  --type-scale-6-2: clamp(16px, 1.5vw, 20px);
+  --type-scale-phone-1: clamp(25px, 2.8vw, 66px);
+  --widt-clamp-CTA: clamp(180px, 16.5vw, 200px);
+  --widt-clamp-CTA-animated: clamp(180px, 19vw, 220px);
+  --distance-between: clamp(10px, 1vw, 30px);
+  
+  --maincollor: #ff9636;
+  --fontcolor-1: #140a00;
+  --fontcolor-4: #0e0700;
+  --fontcolor-3: #1e160e;
+  --fontcolor-2: #6d6862;
+  --background-color: #f9fbfa;
+  --background-color2: #f7faf8;
+  --secondary-color-cognac: #955d4e;
+  --secondary-color-salmon: #d1947c;
+  --secondary-color-persianorange: #e89559;
+  --Low-Opacity-orange: #ffd8b8; 
+  --Low-opacity-orange2: #fcad65; 
+  
+}
 
   
 header {
@@ -54,6 +65,10 @@ header {
     z-index: 10;
   }
   
+  button.clicked {
+    color: var(--maincollor);
+  }
+
   .HomeLogo img {
     height: 50px;
     align-self: center;
@@ -277,7 +292,7 @@ header {
   }
   
   footer ul:nth-of-type(1) a {
-    font-size: var(--type-scale-6);
+    font-size: var(--type-scale-6-2);
   }
   
   footer ul:nth-of-type(2) {
