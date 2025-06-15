@@ -2,14 +2,14 @@
   --type-scale-1: clamp(2.25rem, 1.7143rem + 2.8vw, 15rem);
   --type-scale-1-2: clamp(2rem, .5rem + 4vw, 4rem);
   --type-scale-2: clamp(16px, 2.3vw, 30px);
-  --type-scale-2-1: clamp(16px, 2.5vw, 45px);
-  --type-scale-2-1-hover: clamp(16px, 2.7vw, 50px);
+  --type-scale-2-1: clamp(22px, 2.5vw, 45px);
+  --type-scale-2-1-hover: clamp(16px, 2.6vw, 45px);
   --type-scale-2n: clamp(16px, 6vw, 30px);
   --type-scale-2p: clamp(1rem, 0.9rem + 0.2976vw, 1.25rem);
-  --type-scale-2-hover: clamp(16px, 2.5vw, 36px);
+  --type-scale-2-hover: clamp(18px, 2.5vw, 36px);
   --type-scale-2-2: clamp(1.125rem, 0.9821rem + 0.2976vw, 1.25rem);
   --type-scale-3: clamp(20px, 1.8vw, 30px);
-  --type-scale-3-2: clamp(10px, 1.8vw, 36px);
+  --type-scale-3-2: clamp(16px, 1.6vw, 30px);
   --type-scale-4: clamp(45px, 1.7143rem + 2.8vw, 4rem);
   --type-scale-5: clamp(30px, 3.2vw, 100px);
   --type-scale-5-2: clamp(30px, 3.8vw, 15rem);
@@ -19,23 +19,67 @@
   --widt-clamp-CTA: clamp(180px, 16.5vw, 200px);
   --widt-clamp-CTA-animated: clamp(180px, 19vw, 220px);
   --distance-between: clamp(10px, 1vw, 30px);
-  
+
   --maincollor: #ff9636;
+  --maincollordarker: #e8893b;
+  --maincollorEvenDarker1: rgb(234, 138, 48);
+  --maincollorEvenDarker2: rgb(215, 125, 42);
+  --maincollorEvenDarker3: rgb(205, 119, 39);
+  --maincollorEvenDarker4: rgb(199, 115, 37);
+  --maincollorEvenDarker5: rgb(194, 112, 35);
+  --maincollorEvenDarker6: rgb(186, 107, 34);
+  --maincollorEvenDarker: #ba641e;
+  --maincolorbetween: #785130;
   --fontcolor-1: #140a00;
   --fontcolor-4: #0e0700;
   --fontcolor-3: #1e160e;
   --fontcolor-2: #6d6862;
+  --fontcolor-2-1: #615d58;
+  --fontcolor-2-2: #45423f;
   --background-color: #f9fbfa;
   --background-color2: #f7faf8;
   --secondary-color-cognac: #955d4e;
   --secondary-color-salmon: #d1947c;
   --secondary-color-persianorange: #e89559;
-  --Low-Opacity-orange: #ffd8b8; 
-  --Low-opacity-orange2: #fcad65; 
-  
+  --Low-Opacity-orange: #ffd8b8;
+  --Low-opacity-orange2: #fcad65;
+
+  --phone-color-earpiece: #2c2c2c;
+  --phone-color-earpiece2: rgb(28, 28, 28);
+}
+
+@supports (color: oklch(0% 0 0)) {
+  :root {
+    --maincollor: oklch(0.752 0.226 67.22);
+    --maincollordarker: oklch(0.697 0.196 65.75);
+    --maincollorEvenDarker1: oklch(0.67 0.184 65.5);
+    --maincollorEvenDarker2: oklch(0.616 0.174 63.6);
+    --maincollorEvenDarker3: oklch(0.584 0.168 63.5);
+    --maincollorEvenDarker4: oklch(0.566 0.162 63.5);
+    --maincollorEvenDarker5: oklch(0.549 0.156 63.5);
+    --maincollorEvenDarker6: oklch(0.521 0.152 63.7);
+    --maincollorEvenDarker: oklch(0.466 0.148 53.9);
+    --maincolorbetween: oklch(0.408 0.081 60.6);
+    --fontcolor-1: oklch(0.101 0.033 34.1);
+    --fontcolor-4: oklch(0.081 0.029 34.2);
+    --fontcolor-3: oklch(0.149 0.02 64.9);
+    --fontcolor-2: oklch(0.43 0.018 75.1);
+    --fontcolor-2-1: oklch(0.398 0.017 75.2);
+    --fontcolor-2-2: oklch(0.296 0.017 75.2);
+    --background-color: oklch(0.984 0.004 150.3);
+    --background-color2: oklch(0.976 0.004 150.3);
+    --secondary-color-cognac: oklch(0.532 0.115 34.1);
+    --secondary-color-salmon: oklch(0.733 0.124 43.3);
+    --secondary-color-persianorange: oklch(0.697 0.185 63.2);
+    --Low-Opacity-orange: oklch(0.902 0.12 67.1 / 0.6);
+    --Low-opacity-orange2: oklch(0.824 0.184 66.5 / 0.7);
+    --phone-color-earpiece: oklch(0.18 0 0);
+    --phone-color-earpiece2: oklch(0.172 0 0);
+  }
 }
 
   
+
 header {
     position: fixed;
     z-index: 100;
@@ -388,12 +432,15 @@ footer span {
     height: 45vw;
     margin-bottom: 1em;
   }
-  
-  section:nth-of-type(3) {
-    padding-top: 10em;
-  }
+
   
   .hamburgermenu {
     width: 90vw;
   }
+
+  .button2 {
+    display: none;
+  }
+
+
 }

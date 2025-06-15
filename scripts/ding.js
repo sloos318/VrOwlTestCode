@@ -49,8 +49,8 @@ const texts = document.querySelectorAll('#two > section:nth-of-type(3) ul:nth-of
 
 buttons.forEach((button, index) => {
   button.addEventListener('click', () => {
-    texts.forEach(text => text.style.display = 'none');
-    texts[index].style.display = 'grid';
+    texts.forEach(text => text.classList.remove('shown'));
+    texts[index].classList.add('shown');
   });
 });
 
