@@ -162,6 +162,8 @@
         gap: 4em;
         z-index: 1;
 
+        box-shadow: 1px 1px 20px var(--fontcolor-1);
+
     .project-card {
       position: relative;
       border-radius: 8px;
@@ -180,9 +182,11 @@
         height: 100%;
 
         .image-wrapper {
+          height: 100%;
           img {
             width: 100%;
-            height: auto;
+            height: 100%;
+            overflow: clip;
             display: block;
             transition: transform 0.4s ease;
           }

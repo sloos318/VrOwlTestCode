@@ -430,7 +430,7 @@ section:nth-of-type(1) p {
 
 .Metext p:nth-of-type(1) {
   color: var(--background-color);
-  font-size: var(--type-scale-2-2);
+  font-size: var(--type-scale-3);
   font-weight: 500;
   max-width: 80vw;
   margin-bottom: 1EM;

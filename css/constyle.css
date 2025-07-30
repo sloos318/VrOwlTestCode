@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+main {
+    display: flex;
+    justify-content: center;
+    padding-top: 25vh;
+
+    section {
+        width: 80%;
+
+        div {
+            h2 {
+                font-size: var(--type-scale-big);
+                display: block;
+                font-family: "Poppins", sans-serif;
+                font-weight: 600;
+                line-height: 135%;
+
+                text-align: center;
+
+                color: rgba(0, 0, 0, 0.1);
+                background-clip: text;
+
+                background-repeat: repeat-x;
+                background-image: url(../images/SVG/wave.svg);
+                animation: animate 15s linear infinite;
+            }
+        }
+        ul {
+            display: flex;
+            justify-content: space-between;
+
+            li {
+                font-size: var(--type-scale-3);
+                font-weight: 500;
+                margin: 0;
+                max-width: 60vw;
+                color: var(--fontcolor-2);
+            }
+        }
+
+    }
+}
+
+@keyframes animate{
+  0%{
+    background-position: left 0px top 200%;
+  }
+  40%{
+    background-position: left 10em top 15%;
+  }
+  80%{
+    background-position: left 20em top 15%;
+  }
+  100%{
+    background-position: left 25em top 200%;
+  }
+}

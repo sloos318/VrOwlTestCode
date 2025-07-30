@@ -1,4 +1,5 @@
 :root {
+  --type-scale-big: clamp(2.25rem, 1.7143rem + 15vw, 40rem);
   --type-scale-1: clamp(2.25rem, 1.7143rem + 2.8vw, 15rem);
   --type-scale-1-2: clamp(2rem, .5rem + 4vw, 4rem);
   --type-scale-2: clamp(16px, 2.3vw, 30px);
